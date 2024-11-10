@@ -1,0 +1,132 @@
+*{
+    position: relative;
+    margin: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+body{
+    background-color: #8000ff;
+    display: flex;
+    padding: 0;
+    border: 0;
+}
+
+@keyframes motion {
+    from{top:-400px; opacity: 0;}
+    to{top: 0; opacity: 100%;}
+}
+
+.main-cont{
+    background-color: white;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 2fr 2fr;
+    grid-template-columns: 4fr 4fr 2fr;
+    gap: 30px;
+    padding: 10px 60px;
+    top: 0;
+    animation: motion 1.3s;
+}
+
+#grid-text{
+    margin: auto;
+    margin-left: 100px;
+    animation: motion 1.7s;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 94px;
+    color: #8000ff;
+    margin: 20px 0;
+}
+
+#grid-text > h3{
+    font-weight: 500;
+    font-size: 28px;
+}
+
+#grid-text{
+    grid-column: span 2;
+}
+
+.about{
+    grid-row:span 2;
+}
+.card{
+    display: flex;
+    grid-column: span 2;
+    gap: 40px;
+    margin: auto;
+}
+
+.card-1, .card-2{
+    box-shadow: 15px 15px 53px 0px #8000FF1C;
+    width: calc(361px * 3/4);
+    height: calc(247px * 3/4);
+    border-radius: 15px;
+    text-align: left;
+    padding: 20px;
+}
+
+h4{
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 28px;
+}
+
+p{
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 42px;
+}
+.card-1{
+    margin-left: 20px;
+}
+
+.card-1 > button{
+    font-weight: 700;
+    background-color: #7F00FF;
+    color: white;
+    padding: 8px;
+    border-radius: 6px;
+    border: none;
+}
+
+.card-2 > button{
+    font-weight: 700;
+    background-color: #EAD4FF;
+    color: #3F007E;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: none;
+}
+
+.card-1 > button:hover,.card-2 > button:hover{
+    cursor: pointer;
+}
+
+.about{
+    margin: auto;
+    font-size: 25px;
+}
+
+.about>p{
+    cursor: pointer;
+}
+
+.about>div{
+    margin: auto;
+    display: flex;
+    gap: 20px;
+}
+
+.about img{
+    cursor: pointer;
+}
+
+@font-face {
+    font-family: 'Popppins';
+    src: url('Poppins-Regular.ttf') format('truetype');
+  }

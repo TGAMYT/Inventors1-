@@ -1,0 +1,58 @@
+*{
+    color: white;
+    font-family: 'poppins', sans-serif;
+}
+body{
+    background-image: url('Rectangle\ 1.png');
+    background-repeat: no-repeat;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 36px 60px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+nav>div{
+    display: flex;
+    gap: 78px;
+}
+
+nav > div > p{
+    font-weight: 400;
+}
+
+nav a{
+    margin: auto;
+}
+
+nav button{
+    background-color: #00000029;
+    border: none;
+    font-weight: 700;
+    height: 40px;
+    width: 170px;
+    border-radius: 6px;
+    margin: auto;
+}
+
+nav a{
+    text-decoration: none;
+}
+nav button:hover{
+    cursor: pointer;
+}
+
+main{
+    display: flex;
+    font-weight: 700;
+    font-size: 45px;
+    padding: 20px 100px;
+    justify-content: center;
+    align-items: center;
+}
+@font-face {
+    font-family: 'Popppins';
+    src: url('Poppins-Regular.ttf') format('truetype');
+  }
